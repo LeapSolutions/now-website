@@ -2,28 +2,40 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-hero-gradient flex items-center justify-center relative overflow-hidden">
-      <div className="container mx-auto px-6 py-20 pt-32">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Digital tidsregistrering og planlægning
-          </h1>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mb-8 opacity-90">
-            for teams og virksomheder
-          </h2>
+    <section className="min-h-screen relative overflow-hidden flex items-center">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full bg-hero-gradient"></div>
+      </div>
+      
+      <div className="container mx-auto px-6 py-20 pt-32 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-white">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              Digital tidsregistrering og planlægning
+            </h1>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mb-8 opacity-90">
+              for teams og virksomheder
+            </h2>
+            
+            <p className="text-lg md:text-xl mb-12 opacity-80 leading-relaxed">
+              Optimer dit teams produktivitet med avanceret tidsregistrering og intelligent 
+              planlægning. Få overblik over projekter, deadlines og ressourcer på én platform.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="hero" size="xl" className="text-lg">
+                Prøv nu
+              </Button>
+              <Button variant="white" size="xl" className="text-lg">
+                Se demo
+              </Button>
+            </div>
+          </div>
           
-          <p className="text-lg md:text-xl mb-12 opacity-80 max-w-2xl mx-auto leading-relaxed">
-            Optimer dit teams produktivitet med avanceret tidsregistrering og intelligent 
-            planlægning. Få overblik over projekter, deadlines og ressourcer på én platform.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="text-lg">
-              Prøv nu
-            </Button>
-            <Button variant="white" size="xl" className="text-lg">
-              Se demo
-            </Button>
+          <div className="relative">
+            {/* Placeholder for video or additional content */}
+            <div className="aspect-video bg-white/10 rounded-xl backdrop-blur-sm"></div>
           </div>
         </div>
       </div>
