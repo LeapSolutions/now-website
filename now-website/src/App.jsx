@@ -1,13 +1,14 @@
-import React from 'react';
-import Header from './Header';
-import HeroSection from './HeroSection';
-import FeatureSection from './FeatureSection';
-import './App.css';
+import React from "react";
+import NavBar from "./NavBar";
+import HeroSection from "./HeroSection";
+import FeatureSection from "./FeatureSection";
+// import "./App.css";
+import "./index.css";
 
 function App() {
   return (
     <div>
-      <Header />
+      <NavBar />
       <HeroSection />
       <FeatureSection />
     </div>

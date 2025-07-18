@@ -42,9 +42,9 @@ const FeatureSection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center gap-10 px-[5vw] py-16 max-w-7xl mx-auto">
+    <section className="flex px-28  mb-[200px] mt-[200px] h-[60vh] gap-20">
       {/* Left: Icons, heading, description */}
-      <div className="w-full md:w-1/2 flex flex-col items-start">
+      <div className="w-1/2 md:w-2/5 lg:w-1/4 flex flex-col items-start justify-center gap-6">
         <div className="grid grid-cols-3 grid-rows-2 gap-6 mb-8">
           {features.map((f, idx) => (
             <button
@@ -62,19 +62,22 @@ const FeatureSection = () => {
             </button>
           ))}
         </div>
-        <h2 className="text-3xl font-extrabold mb-3 text-black">
-          {features[selected].heading}
-        </h2>
-        <p className="text-gray-700 text-lg max-w-md">
-          {features[selected].description}
-        </p>
+        <div className="min-h-[140px]">
+          <h2 className="text-3xl font-extrabold mb-3 text-black ">
+            {features[selected].heading}
+          </h2>
+          <p className="text-gray-700 text-lg max-w-md ">
+            {features[selected].description}
+          </p>
+        </div>
       </div>
+
       {/* Right: Image */}
-      <div className="w-full md:w-1/2 flex justify-center items-center">
+      <div className="w-1/2 md:w-3/5 lg:w-3/4 flex justify-end items-start  ">
         <img
           src={featureImage}
           alt={features[selected].heading}
-          className="w-full max-w-2xl"
+          className="w-full h-auto object-contain"
         />
       </div>
     </section>
