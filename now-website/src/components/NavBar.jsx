@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../src/assets/icons/now.svg";
+import logo from "../assets/icons/Now.svg";
 
 const NavBar = () => (
   <header className="sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-28">
