@@ -2,6 +2,10 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme{
   --font-primary: 'League Spartan', sans-serif;
   --font-secondary: 'Montserrat', sans-serif; 

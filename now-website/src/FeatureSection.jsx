@@ -61,18 +61,18 @@ const FeatureSection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="flex flex-col lg:flex-row px-4 sm:px-8 md:px-16 lg:px-28 mb-10 mt-10 md:mb-24 md:mt-24 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20">
-      {/* Left: Icons, heading, description */}
-      <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0">
+    <section id="funktionsOversigt" className="scroll-mt-[200px] flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-10 mt-10 md:mb-24 md:mt-24 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20">
+
+      <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0 ">
         <div className="max-w-md w-full flex flex-col items-center lg:items-start">
           <div className="grid grid-cols-3 grid-rows-2 gap-4 md:gap-6 mb-6 md:mb-8 w-full justify-items-center lg:justify-items-start">
             {features.map((f, idx) => (
               <button
                 key={f.heading}
-                className={`w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl border-2 text-2xl md:text-3xl transition-all shadow-sm ${
+                className={`w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-2xl border-2 text-2xl md:text-3xl transition-all shadow-sm  hover:cursor-pointer ${
                   selected === idx
-                    ? "border-blue-600 bg-blue-50 text-blue-600"
-                    : "border-gray-300 bg-white text-gray-500 hover:border-blue-400 hover:bg-blue-50 hover:text-blue-600"
+                    ? "border-[#206178] bg-[#256B84]/10 "
+                    : "border-gray-300 bg-white text-gray-500 hover:border-[#256B84] hover:bg-[#256B84]/10 "
                 }`}
                 onClick={() => setSelected(idx)}
                 aria-label={f.heading}
@@ -89,19 +89,19 @@ const FeatureSection = () => {
             ))}
           </div>
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left w-full">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-2 md:mb-3 text-black w-full ">
+            <h2 className="text-2xl md:text-4xl font-extrabold mb-2 md:mb-3 text-black w-full font-primary ">
               {features[selected].heading}
             </h2>
-            <p className="text-gray-700 text-base md:text-lg max-w-md lg:min-h-[120px]">
+            <p className=" text-base sm:text-lg md:text-xl text-gray-700 max-w-md lg:min-h-[120px] font-secondary">
               {features[selected].description}
             </p>
           </div>
         </div>
       </div>
 
-      {/* Right: Image */}
+    
       <div className="w-full lg:w-2/3 flex justify-center items-start">
-        <div className="w-full flex justify-center items-center min-h-[220px] md:min-h-[320px] lg:min-h-[400px]">
+        <div className="w-full flex justify-end items-center min-h-[220px] md:min-h-[320px] lg:min-h-[400px]">
           <img
             src={features[selected].image}
             alt={features[selected].heading}
