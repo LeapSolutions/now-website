@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme{
+  --font-primary: 'League Spartan', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif; 
+}
+/* body {
+  font-family: 'League Spartan', sans-serif;
+} */
