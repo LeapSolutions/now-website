@@ -6,9 +6,30 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #00cc66;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+@media (max-width: 767px) {
+  .scroll-progress-bar {
+    display: none;
+  }
+}
+
+
 @theme{
   --font-primary: 'League Spartan', sans-serif;
   --font-secondary: 'Montserrat', sans-serif; 
+ --color-primary-orange: #f26a1b;
+  --color-primary-orange-hover: #d85e17;
 }
 /* body {
   font-family: 'League Spartan', sans-serif;

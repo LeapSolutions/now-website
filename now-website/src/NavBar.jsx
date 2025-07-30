@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../src/assets/icons/now.svg";
 
-const Header = () => (
-  <header className="sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-10">
+const NavBar = () => (
+  <header className="sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-28">
     <div className="flex  w-full">
       {/* Logo */}
       <div className="flex items-center  w-1/2">
@@ -49,4 +49,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default NavBar;

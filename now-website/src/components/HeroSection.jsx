@@ -31,9 +31,6 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
 
-      
-
-     
       <div className="relative z-20 text-white w-full px-4 sm:px-8 md:ml-20 lg:max-w-4xl text-center md:text-left">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-4 font-primary leading-tight">
           Digital tidsregistrering og planlægning for teams og virksomheder
@@ -43,10 +40,10 @@ const HeroSection = () => {
           tidsregistrering og styring af arbejdstid.
         </p>
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <button className="bg-[#F26A1B] hover:bg-[#f25f1b] text-white px-6 py-3 rounded font-semibold transition font-secondary text-base">
+          <button className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-3 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base">
             Prøv nu
           </button>
-          <button className="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-orange-500 transition font-secondary text-base">
+          <button className="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-orange-500 transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base">
             Kontakt os
           </button>
         </div>

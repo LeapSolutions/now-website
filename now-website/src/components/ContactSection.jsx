@@ -51,7 +51,10 @@ const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
       <div className=" text-center space-y-5">
         <p className="font-semibold text-3xl">{name}</p>
         {!isLiveChat && (
-          <p className="text-xl flex items-center justify-center gap-3 ">
+          <a
+            href={`mailto:${email}`}
+            className="text-xl flex items-center justify-center gap-3 hover:text-gray-200 transition-colors duration-300 ease-in-out"
+          >
             <svg
               width="30px"
               height="30px"
@@ -59,26 +62,17 @@ const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <path
-                  d="M1.60175 4.20114C2.14997 3.47258 3.02158 3 4 3H20C20.9784 3 21.85 3.47258 22.3982 4.20113L12 11.7635L1.60175 4.20114Z"
-                  fill="#ffffff"
-                ></path>{" "}
-                <path
-                  d="M1 6.2365V18C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6.23649L13.1763 13.381C12.475 13.891 11.525 13.891 10.8237 13.381L1 6.2365Z"
-                  fill="#ffffff"
-                ></path>{" "}
-              </g>
-            </svg>{" "}
+              <path
+                d="M1.60175 4.20114C2.14997 3.47258 3.02158 3 4 3H20C20.9784 3 21.85 3.47258 22.3982 4.20113L12 11.7635L1.60175 4.20114Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M1 6.2365V18C1 19.6523 2.34772 21 4 21H20C21.6523 21 23 19.6523 23 18V6.23649L13.1763 13.381C12.475 13.891 11.525 13.891 10.8237 13.381L1 6.2365Z"
+                fill="#ffffff"
+              />
+            </svg>
             {email}
-          </p>
+          </a>
         )}
         {isLiveChat && (
           <button className="bg-white text-black rounded-lg px-4 py-1 mt-2 text-sm">
@@ -92,9 +86,9 @@ const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
 
 const ContactSection = () => {
   return (
-    <section id="kontakt" className=" scroll-mt-[250px] lg:scroll-mt-[100px]  py-32 text-center px-6 ">
-      <div className="mb-32">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-primary">
+    <section id="kontakt" className=" scroll-mt-[15px] lg:scroll-mt-[100px]  py-32 text-center px-6 ">
+      <div className="lg:mb-32">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 font-primary">
           Spørgsmål? Vi sidder klar til at hjælpe
         </h2>
         <p className="text-base sm:text-lg md:text-xl mb-12 text-gray-700 max-w-4xl mx-auto font-secondary">
@@ -104,7 +98,7 @@ const ContactSection = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8  sm:px-4 md:px-6 lg:px-24">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8  sm:px-4 md:px-6 lg:px-24s">
         {contacts.map((contact, index) => (
           <ContactCard key={index} {...contact} />
         ))}
