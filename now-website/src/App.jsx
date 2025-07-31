@@ -9,21 +9,23 @@ import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 import ScrollProgressBar from "./components/ScrollProgressBar";
+import NavatticFeatureSection from "./components/NavatticFeatureSection";
 // import "./App.css";
 import "./index.css";
+
 
 function App() {
   return (
     <div className="bg-[#FCFBF4]">
-      
       <NavBar />
       <ScrollProgressBar />
       <HeroSection />
       <FeatureSection />
+      <NavatticFeatureSection />
       <PricingSection />
       <MobileSection />
       <ContactSection />
-      <Footer />
+      <Footer/>
       <BackToTopButton />
     </div>
   );

@@ -5,6 +5,7 @@ import expenseIcon from "./assets/icons/types/expense.svg";
 import absenceIcon from "./assets/icons/types/absence.svg";
 import allowanceIcon from "./assets/icons/types/allowance.svg";
 import reportIcon from "./assets/icons/types/report.svg";
+import NavatticEmbed from "./components/NavatticEmbed";
 
 const iconMap = {
   "time.svg": timeIcon,
@@ -64,7 +65,16 @@ const FeatureSection = () => {
   const [selected, setSelected] = useState(0);
 
   return (
+
+   
+<>
+
+
+
+ 
     <section
+
+    
       id="funktionsOversigt"
       className="scroll-mt-[200px] flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-10 mt-10 md:mb-24 md:mt-24 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20"
     >
@@ -118,6 +128,9 @@ const FeatureSection = () => {
         </div>
       </div>
     </section>
+    </>
+
+    
   );
 };
 
