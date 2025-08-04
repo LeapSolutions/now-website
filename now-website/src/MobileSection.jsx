@@ -3,7 +3,7 @@ import mobileFrame from "./assets/images/mobileFrame.png";
 import graphicElement from "../src/assets/icons/NOW-graphicElement.svg"
 
 const MobileSection = () => (
-  <section className="relative w-full bg-[#034C8C] min-h-[125vh] lg:min-h-[340px] mt-32 px-6 sm:px-8 md:px-16 lg:px-28 flex items-center">
+  <section className="relative w-full bg-[#034C8C] min-h-[125vh] lg:min-h-[340px] mt-32 px-6 sm:px-8 md:px-16 lg:px-28 flex items-center lg:mt-[400px]">
     <div className="absolute inset-0 overflow-hidden block max-lg:hidden z-0">
       <img
         src={graphicElement}

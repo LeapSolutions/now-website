@@ -34,6 +34,11 @@ html {
  --color-primary-orange: #f26a1b;
   --color-primary-orange-hover: #d85e17;
 }
+
+    screens: {
+        '2xl-desktop': '1920px',
+        '4k': '2560px',
+      },
 /* body {
   font-family: 'League Spartan', sans-serif;
 } */

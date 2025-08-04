@@ -18,7 +18,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[95vh] flex items-center overflow-hidden ">
+    <section className="relative w-full h-[95vh] flex items-center overflow-hidden">
       <video
         ref={contentRef}
         className="absolute top-0 left-0 w-full h-full object-cover z-0"

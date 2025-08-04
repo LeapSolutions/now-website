@@ -47,12 +47,12 @@ const NavBar = () => {
         }`}
         onClick={() => setMenuOpen(false)}
       />
-      <header
-        className={`sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-4 md:px-10 lg:px-28 transition-transform duration-300 ${
-          showNav ? "translate-y-0" : "-translate-y-full"
-        }`}
-      >
-        <div className="flex w-full items-center justify-between ">
+     <header
+  className={`sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-4 md:px-10 lg:px-28 transition-transform duration-300  ${
+    showNav ? "translate-y-0" : "-translate-y-full"
+  }`}
+>
+        <div className="flex w-full items-center justify-between">
           <div className="flex items-center">
             <img src={logo} alt="Logo" className="h-7 w-auto object-contain" />
           </div>

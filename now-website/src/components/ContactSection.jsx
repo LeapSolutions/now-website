@@ -98,7 +98,7 @@ const ContactSection = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8  sm:px-4 md:px-6 lg:px-24s">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 sm:px-4 md:px-6 lg:px-24s">
         {contacts.map((contact, index) => (
           <ContactCard key={index} {...contact} />
         ))}
