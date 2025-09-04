@@ -28,14 +28,14 @@ const PricingSection = () => {
   return (
     <section
       id="priser"
-      className=" scroll-mt-[15px] lg:scroll-mt-[100px] relative bg-cover bg-center bg-no-repeat py-20 px-6 lg:px-28 lg:mb-[200px] lg:mt-[200px] "
+      className=" scroll-mt-[15px] lg:scroll-mt-[100px] relative bg-cover bg-center bg-no-repeat py-20 px-6 lg:px-28 mt-28 mb-28 lg:mb-[200px] lg:mt-[200px] "
     >
       <div className="w-full flex flex-col min-[1360px]:flex-row min-[1360px]:items-start justify-between gap-12 min-[1360px]:gap-x-12">
         <div className="w-full min-[1360px]:max-w-[800px] text-black text-center min-[1360px]:text-left flex-shrink min-[1360px]:self-center">
-          <h2 className="text-2xl sm:text-4xl font-primary font-bold mb-4 lg:text-4xl">
-            Fuld adgang til tidsregistrering, rapportering og planlægning
+          <h2 className="text-3xl w-full lg:w-xl sm:text-4xl font-primary font-bold mb-4 lg:text-4xl ">
+            Alt-i-én løsning til tidsregistrering, rapportering og planlægning
           </h2>
-          <p className="text-gray-800 mb-6 text-base sm:text-xl max-w-lg mx-auto min-[1360px]:mx-0 font-secondary">
+          <p className="text-gray-800 mb-6 text-lg sm:text-xl max-w-lg mx-auto min-[1360px]:mx-0 font-secondary">
             NOW samler tidsregistrering, ferieplanlægning, kørselsudgifter og
             projektudgifter i én løsning
           </p>

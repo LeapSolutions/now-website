@@ -73,12 +73,11 @@ export default function AdminOverview({
   return (
     <section
       id="adminOverview"
-      className="scroll-mt-[200px] flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-10 mt-10 md:mb-24 md:mt-24 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20"
+      className="scroll-mt-[200px] flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-28 mt-28 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20 "
       onKeyDown={onKeyDown}
     >
-      {/* Media (venstre) */}
       <div className="w-full lg:w-2/3 flex justify-start items-center max-lg:order-2">
-        <div className="w-full max-w-xl md:max-w-3xl lg:max-w-6xl">
+        <div className="w-full max-w-xl md:max-w-3xl lg:max-w-6xl ">
           <div
             className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gray-50 shadow-sm"
             onMouseEnter={() => setPaused(true)}
@@ -100,17 +99,14 @@ export default function AdminOverview({
         </div>
       </div>
 
-
-      <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0">
+      <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0 ">
         <div className="max-w-xl w-full text-center lg:text-left">
-        
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-3 md:mb-6 text-black font-primary">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-5 md:mb-6 w-full text-black font-primary">
             {staticTitle}
           </h2>
 
-    
           <div
-            className="relative min-h-[150px]"
+            className="relative min-h-[150px] max-w-xl"
             aria-live="polite"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
@@ -123,7 +119,7 @@ export default function AdminOverview({
                 }`}
                 aria-hidden={i === index ? "false" : "true"}
               >
-                <h3 className="text-xl sm:text-2xl md:text-2xl font-bold mb-2 md:mb-2 text-black font-secondary">
+                <h3 className="text-lg sm:text-2xl md:text-2xl font-bold mb-2 md:mb-2 text-black font-secondary">
                   {s.title}
                 </h3>
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 font-secondary">
@@ -133,9 +129,8 @@ export default function AdminOverview({
             ))}
           </div>
 
-        
           {total > 1 && (
-            <div className="mt-5 flex items-center gap-3">
+            <div className="mt-5 flex justify-center gap-3 lg:justify-start ">
               <button
                 type="button"
                 onClick={prev}

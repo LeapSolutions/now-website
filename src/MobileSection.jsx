@@ -15,12 +15,12 @@ const MobileSection = () => (
 
     <div className="flex flex-col lg:flex-row w-full h-full flex-1 justify-center items-center">
       <div className="flex-1 flex flex-col justify-center items-center lg:items-start text-white text-center lg:text-left mb-16 lg:mb-0 ">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 leading-tight font-primary">
+        <h2 className="text-3xl md:text-3xl lg:text-4xl font-extrabold mb-4 leading-tight font-primary">
           Registrér arbejdstimer direkte fra mobilen
         </h2>
-        <p className="mb-8 text-base sm:text-lg md:text-xl font-secondary max-w-4xl ">
+        <p className="mb-8 text-lg sm:text-lg md:text-xl font-secondary max-w-4xl ">
           NOW virker på både iPhone og Android og gør det nemt at registrere
-          arbejdstid <br /> – uanset om du er på farten, ude på en opgave eller
+          arbejdstid  – uanset om du er på farten, ude på en opgave eller
           arbejder hjemmefra.
         </p>
         <button

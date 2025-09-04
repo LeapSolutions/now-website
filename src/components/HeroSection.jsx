@@ -35,7 +35,7 @@ const HeroSection = () => {
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-4 font-primary leading-tight">
           Digital tidsregistrering og planlægning for teams og virksomheder
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mb-8 font-secondary">
+        <p className="text-lg sm:text-lg md:text-xl mb-8 font-secondary">
           NOW er et danskudviklet webbaseret system til planlægning,
           tidsregistrering og styring af arbejdstid.
         </p>

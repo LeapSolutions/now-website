@@ -34,7 +34,7 @@ const contacts = [
 ];
 
 const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
-  <div className="w-full max-lg:mt-22 ">
+  <div className="w-full max-lg:mt-20  ">
     <div
       className="flex flex-col items-center justify-center text-white  rounded-xl relative overflow-visible h-full min-h-[320px]"
       style={{
@@ -49,7 +49,7 @@ const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
         className="w-[120px] h-[120px] rounded-full object-cover absolute -top-16"
       />
       <div className=" text-center space-y-5">
-        <p className="font-semibold text-3xl">{name}</p>
+        <p className="font-semibold text-2xl lg:text-3xl">{name}</p>
         {!isLiveChat && (
           <a
             href={`mailto:${email}`}
@@ -88,10 +88,10 @@ const ContactSection = () => {
   return (
     <section id="kontakt" className=" scroll-mt-[15px] lg:scroll-mt-[100px]  py-32 text-center px-6 ">
       <div className="lg:mb-32">
-        <h2 className="text-2xl md:text-4xl font-semibold mb-4 font-primary">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-primary">
           Spørgsmål? Vi sidder klar til at hjælpe
         </h2>
-        <p className="text-base sm:text-lg md:text-xl mb-12 text-gray-700 max-w-4xl mx-auto font-secondary">
+        <p className="text-lg sm:text-lg md:text-xl mb-12 text-gray-700 max-w-4xl mx-auto font-secondary">
           Har du spørgsmål om funktioner, priser eller hvordan du kommer i gang
           med NOW? Vores team sidder klar til at hjælpe - kontakt os gerne for
           en hurtig afklaring.
