@@ -122,7 +122,7 @@ export default function AdminOverview({
                 <h3 className="text-lg sm:text-2xl md:text-2xl font-bold mb-2 md:mb-2 text-black font-secondary">
                   {s.title}
                 </h3>
-                <p className="text-base sm:text-lg md:text-xl text-gray-700 font-secondary">
+                <p className="text-lg sm:text-lg md:text-xl text-gray-700 font-secondary">
                   {s.description}
                 </p>
               </div>
