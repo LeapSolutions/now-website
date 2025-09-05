@@ -80,7 +80,7 @@ const NavBar = () => {
               href="https://gonow.dk/register"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 bg-primary-orange hover:bg-primary-orange-hover text-white px-4 py-2 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-primary whitespace-nowrap "
+              className="ml-2 bg-primary-orange hover:bg-primary-orange-hover text-white px-4 py-2 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary whitespace-nowrap "
             >
               Prøv gratis
             </a>
@@ -88,7 +88,7 @@ const NavBar = () => {
               href="https://gonow.dk/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 border border-primary-orange text-primary-orange px-4 py-2 rounded font-semibold hover:bg-primary-orange/15 transition-colors duration-400 ease-in-out cursor-pointer"
+              className="ml-2 border border-primary-orange text-primary-orange px-4 py-2 rounded font-semibold hover:bg-primary-orange/15 transition-colors duration-400 ease-in-out cursor-pointer font-secondary"
             >
               Login
             </a>
