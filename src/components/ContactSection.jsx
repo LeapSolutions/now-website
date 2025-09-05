@@ -9,19 +9,19 @@ import cardYellow from "../assets/images/contactAssets/contactCardYellow.png";
 const contacts = [
   {
     name: "Emil Krog kruse",
-    email: "ekk@NOW.dk",
+    email: "ekk@leapx.dk",
     image: emil,
     bg: cardBlue,
   },
   {
     name: "Karl D. Mortensen",
-    email: "kdm@NOW.dk",
+    email: "kdm@leapx.dk",
     image: karl,
     bg: cardYellow,
   },
   {
     name: "Teknisk support",
-    email: "tek@NOW.dk",
+    email: "DLN@leapx.dk",
     image: daniel,
     bg: cardBlue,
   },

@@ -6,6 +6,15 @@ import absenceIcon from "../assets/icons/types/absence.svg";
 import allowanceIcon from "../assets/icons/types/allowance.svg";
 import reportIcon from "../assets/icons/types/report.svg";
 
+// IMPORT FEATURE IMAGES
+import timeFeature from "../assets/images/features/timeFeature.png";
+import drivingFeature from "../assets/images/features/drivingFeature.png"; 
+import expenseFeature from "../assets/images/features/expenseFeature.png";
+import absenceFeature from "../assets/images/features/absenceFeature.png";
+import allowanceFeature from "../assets/images/features/allowanceFeature.png";
+import reportFeature from "../assets/images/features/reportFeature.png";
+
+
 const iconMap = {
   "time.svg": timeIcon,
   "driving.svg": drivingIcon,
@@ -21,42 +30,42 @@ const features = [
     heading: "Tidsregistrering",
     description:
       "NOW gør det nemt at registrere arbejdstid, opgaver og fravær – alt samlet ét sted og tilgængeligt i realtid.",
-    image: "src/assets/images/features/timeFeature.png",
+    image: timeFeature,
   },
   {
     icon: "driving.svg",
     heading: "Kørselsudgifter",
     description:
       "NOW gør det nemt at tilføje kørte kilometer direkte til projekter. Systemet beregner afstand og kørselsgodtgørelse automatisk baseret på kortdata.",
-    image: "src/assets/images/features/drivingFeature.png",
+    image: drivingFeature,
   },
   {
     icon: "expense.svg",
     heading: "Projektudgifter",
     description:
       "NOW gør det nemt at knytte udgifter til specifikke projekter og kunder. Det giver gennemsigtighed i forbrug og letter faktureringen.",
-    image: "src/assets/images/features/expenseFeature.png",
+    image: expenseFeature,
   },
   {
     icon: "allowance.svg",
     heading: "Diæter",
     description:
       "NOW giver mulighed for at registrere og beregne diæter pr. projekt eller bruger. Systemet understøtter faste satser og beløbsgrænser for medarbejdere.",
-    image: "src/assets/images/features/allowanceFeature.png",
+    image: allowanceFeature,
   },
   {
     icon: "absence.svg",
     heading: "Fravær og ferie",
     description:
       "NOW gør det nemt at holde styr på medarbejderes ferie og sygdom. Længere fraværsperioder kan registreres med få klik direkte i kalenderen.",
-    image: "src/assets/images/features/absenceFeature.png",
+    image: absenceFeature,
   },
   {
     icon: "report.svg",
     heading: "Rapportering",
     description:
       "NOW samler arbejdstimer, projektudgifter og opgavefremskridt i klare rapporter. Det giver ledelsen det nødvendige overblik til at evaluere ressourceforbrug og planlægning.",
-    image: "src/assets/images/features/reportFeature.png",
+    image: reportFeature,
   },
 ];
 
