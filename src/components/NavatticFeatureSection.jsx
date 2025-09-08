@@ -9,7 +9,7 @@ export default function NavatticFeatureSection() {
     >
       {/* Navattic embed section */}
       <div className="w-full lg:w-2/3 flex justify-start items-center max-lg:order-2 ">
-        <div className="w-full max-w-xl md:max-w-3xl lg:max-w-6xl flex items-start justify-center">
+        <div className="w-full max-w-xl md:max-w-3xl lg:max-w-[85%] flex items-start justify-center">
           <div className="w-full">
             <NavatticEmbed />
           </div>
