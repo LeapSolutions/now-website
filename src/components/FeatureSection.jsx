@@ -153,7 +153,7 @@ const FeatureSection = () => {
         className="scroll-mt-[200px] flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-10 mt-10 md:mb-24 md:mt-24 lg:mb-[200px] lg:mt-[200px] gap-0 md:gap-12 lg:gap-20 "
       >
         <div className="w-full lg:w-1/3 flex flex-ms-col  lg:items-center justify-start mb-8 lg:mb-0">
-          <div className="max-w-lg w-full flex flex-col items-center lg:items-start">
+          <div className="lg:max-w-lg w-full flex flex-col items-center lg:items-start">
             <div className="grid grid-cols-3 grid-rows-2 gap-4 md:gap-6 mb-10 md:mb-8 w-full justify-items-center lg:justify-items-start">
               {features.map((f, idx) => (
                 <button

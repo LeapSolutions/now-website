@@ -1,11 +1,7 @@
 import React from "react";
 import WeeklyRegistrationOverview from "../assets/images/UserAndAdmin//userView.png";
 
-/**
- * Static feature section (no icons, no interaction)
- * - Fixed image, heading and description
- * - Responsive layout, optimized for the NOW site style
- */
+
 export default function UserOverview() {
   const heading = "Brugervenligt for brugere";
   const description =
@@ -14,7 +10,7 @@ export default function UserOverview() {
   return (
     <section className="flex flex-col lg:flex-row px-5 sm:px-8 md:px-16 lg:px-28 mb-28 mt-28 lg:mb-[200px] lg:mt-[200px] gap-8 md:gap-12 lg:gap-20 ">
       <div className="w-full lg:w-1/3 flex flex-ms-col  lg:items-center justify-start mb-8 lg:mb-0 ">
-        <div className="max-w-lg w-full flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="lg:max-w-lg w-full flex flex-col items-center lg:items-start text-center lg:text-left ">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-black font-primary">
             {heading}
           </h2>

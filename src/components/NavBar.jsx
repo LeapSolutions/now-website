@@ -11,9 +11,9 @@ const NavBar = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setShowNav(false); // Scrolling down
+        setShowNav(false);
       } else {
-        setShowNav(true); // Scrolling up
+        setShowNav(true); 
       }
 
       setLastScrollY(currentScrollY);
@@ -27,13 +27,13 @@ const NavBar = () => {
 
   useEffect(() => {
     if (menuOpen) {
-      document.body.style.overflow = "hidden"; // Disable scroll
+      document.body.style.overflow = "hidden"; 
     } else {
-      document.body.style.overflow = ""; // Re-enable scroll
+      document.body.style.overflow = ""; 
     }
 
     return () => {
-      document.body.style.overflow = ""; // Cleanup in case component unmounts
+      document.body.style.overflow = ""; 
     };
   }, [menuOpen]);
 
@@ -80,7 +80,7 @@ const NavBar = () => {
               href="https://gonow.dk/register"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 bg-primary-orange hover:bg-primary-orange-hover text-white px-4 py-2 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary whitespace-nowrap "
+              className="ml-2 bg-primary-orange hover:bg-primary-orange-hover text-white px-4 py-2 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary whitespace-nowrap text-sm "
             >
               Prøv gratis
             </a>
@@ -88,7 +88,7 @@ const NavBar = () => {
               href="https://gonow.dk/login"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 border border-primary-orange text-primary-orange px-4 py-2 rounded font-semibold hover:bg-primary-orange/15 transition-colors duration-400 ease-in-out cursor-pointer font-secondary"
+              className="ml-2 border  border-primary-orange text-primary-orange px-4 py-2 rounded font-semibold hover:bg-primary-orange/15 transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-sm"
             >
               Login
             </a>

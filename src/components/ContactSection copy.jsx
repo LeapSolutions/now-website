@@ -86,7 +86,7 @@ const ContactCard = ({ name, email, image, bg, isLiveChat }) => (
 
 const ContactSection = () => {
   return (
-    <section id="kontakt" className=" scroll-mt-[15px] lg:scroll-mt-[100px]  text-center px-6 ">
+    <section id="kontakt" className=" scroll-mt-[15px] lg:scroll-mt-[100px]  py-32 text-center px-6 ">
       <div className="lg:mb-32">
         <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-primary">
           Spørgsmål? Vi sidder klar til at hjælpe

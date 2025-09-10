@@ -11,6 +11,7 @@ import ScrollProgressBar from "./components/ScrollProgressBar";
 import NavatticFeatureSection from "./components/NavatticFeatureSection";
 import UserOverview from "./components/UserOverview";
 import AdminOverview from "./components/AdminOverview";
+import GbtContactSection from "./components/ContactSectionn"
 
 // import "./App.css";
 import "./index.css";
@@ -24,11 +25,12 @@ function App() {
       <HeroSection />
       <FeatureSection />
       <NavatticFeatureSection />
+      <MobileSection />
       <UserOverview />
       <AdminOverview />
       <PricingSection />
-      <MobileSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
+      <GbtContactSection/>
       <Footer/>
       <BackToTopButton />
     </div>

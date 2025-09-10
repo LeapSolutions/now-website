@@ -12,9 +12,7 @@ const HeroSection = () => {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -28,7 +26,6 @@ const HeroSection = () => {
         playsInline
       >
         <source src="/videos/hero-animation-NOW.webm" type="video/webm" />
-        Your browser does not support the video tag.
       </video>
 
       <div className="relative z-20 text-white w-full px-4 sm:px-8 md:ml-20 lg:max-w-4xl text-center md:text-left">
@@ -39,13 +36,21 @@ const HeroSection = () => {
           NOW er et danskudviklet webbaseret system til planlægning,
           tidsregistrering og styring af arbejdstid.
         </p>
+
         <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-          <button className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-3 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base">
-            Prøv nu
-          </button>
-          <button className="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-orange-500 transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base">
+          <a
+            href="#funktionsOversigt"
+            className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-3 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base text-center"
+          >
+            Se features
+          </a>
+
+          <a
+            href="#kontakt"
+            className="border border-white text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-orange-500 transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-base text-center"
+          >
             Kontakt os
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -28,7 +28,7 @@ const PricingSection = () => {
   return (
     <section
       id="priser"
-      className=" scroll-mt-[15px] lg:scroll-mt-[100px] relative bg-cover bg-center bg-no-repeat py-20 px-6 lg:px-28 mt-28 mb-28 lg:mb-[200px] lg:mt-[200px] "
+      className=" scroll-mt-[15px] lg:scroll-mt-[160px] relative bg-cover bg-center bg-no-repeat py-6 px-6 lg:px-28 mt-28 mb-28 lg:mb-[200px] lg:mt-[200px] "
     >
       <div className="w-full flex flex-col min-[1360px]:flex-row min-[1360px]:items-start justify-between gap-12 min-[1360px]:gap-x-12">
         <div className="w-full min-[1360px]:max-w-[800px] text-black text-center min-[1360px]:text-left flex-shrink min-[1360px]:self-center">
@@ -39,9 +39,12 @@ const PricingSection = () => {
             NOW samler tidsregistrering, ferieplanlægning, kørselsudgifter og
             projektudgifter i én løsning
           </p>
-          <button className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-2 max-md:px-5 max-md:py-2 rounded font-semibold text-lg transition-colors duration-400 ease-in-out cursor-pointer">
+          <a
+            href="#kontakt"
+            className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-2 max-md:px-5 max-md:py-2 rounded font-semibold text-lg transition-colors duration-400 ease-in-out cursor-pointer"
+          >
             Køb
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-col gap-6 w-full min-[780px]:flex-row min-[640px]:gap-6 min-[1360px]:w-auto flex-shrink-0">
@@ -61,9 +64,9 @@ const PricingSection = () => {
               <CheckItem>Ingen kortoplysninger nødvendig</CheckItem>
             </ul>
             <div className="mt-auto pt-8">
-              <button className="w-full bg-[#034C8C] text-white hover:bg-[#023864] font-semibold py-2 rounded-lg font-secondary lg:text-sm transition-colors duration-400 ease-in-out cursor-pointer">
+              <a href="#kontakt" className="block w-full bg-[#034C8C] text-white hover:bg-[#023864] font-semibold py-2 rounded-lg font-secondary lg:text-sm transition-colors duration-400 ease-in-out cursor-pointer text-center">
                 Prøv det nu
-              </button>
+              </a>
             </div>
           </div>
 
@@ -84,10 +87,13 @@ const PricingSection = () => {
               <CheckItem>Fast lav pris</CheckItem>
               <CheckItem>Adgang til alle features</CheckItem>
             </ul>
-            <div className="mt-auto pt-8">
-              <button className="w-full bg-[#F2B441] hover:bg-[#f29f41] text-[#034C8C] font-semibold py-2 rounded-lg font-secondary lg:text-sm transition-colors duration-400 ease-in-out cursor-pointer">
+            <div className="mt-auto pt-8 ">
+              <a
+                href="#kontakt"
+                className="block w-full bg-[#F2B441] hover:bg-[#f29f41] text-[#034C8C] font-semibold py-2 rounded-lg font-secondary lg:text-sm transition-colors duration-400 ease-in-out cursor-pointer text-center"
+              >
                 Køb større overblik
-              </button>
+              </a>
             </div>
           </div>
         </div>

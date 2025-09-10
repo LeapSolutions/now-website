@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const NavatticEmbed = () => {
   useEffect(() => {
-    // Prevent duplicate script injection
+
     if (!window.__navatticScriptLoaded) {
       const script = document.createElement("script");
       script.src = "https://js.navattic.com/embeds.js";
@@ -15,7 +15,6 @@ const NavatticEmbed = () => {
       document.body.appendChild(script);
       window.__navatticScriptLoaded = true;
     } else {
-      // Script already exists — still try to load embeds again just in case
       if (window.NavatticEmbed) {
         window.NavatticEmbed.loadEmbeds();
       }
