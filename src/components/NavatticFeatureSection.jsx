@@ -16,7 +16,7 @@ export default function NavatticFeatureSection() {
           </div>
         </div>
 
-        <div className="w-full lg:w-[25%] order-1 lg:order-2 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0">
+        <div className="w-full lg:w-[30%] order-1 lg:order-2 flex flex-col items-center lg:items-start justify-center mb-8 lg:mb-0">
           <div className="max-w-lg w-full flex flex-col items-center lg:items-start text-center lg:text-left  ">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-2 md:mb-3 text-black font-primary w-full">
               Interaktiv produktgennemgang

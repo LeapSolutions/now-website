@@ -48,7 +48,7 @@ const NavBar = () => {
         onClick={() => setMenuOpen(false)}
       />
      <header
-  className={`sticky top-0 z-30 w-full bg-white shadow-sm py-3 px-4 md:px-10 lg:px-28 transition-transform duration-300  ${
+  className={`sticky top-0 z-30 py-5 w-full bg-white shadow-sm py-3 px-4 md:px-10 lg:px-27 transition-transform duration-300  ${
     showNav ? "translate-y-0" : "-translate-y-full"
   }`}
 >
@@ -57,7 +57,7 @@ const NavBar = () => {
             <img src={logo} alt="Logo" className="h-7 w-auto object-contain" />
           </div>
 
-          <nav className="hidden md:flex justify-end items-center gap-6 w-1/2">
+          <nav className="hidden md:flex justify-end items-center gap-5 w-1/2">
             <a
               href="#funktionsOversigt"
               className="text-gray-600 hover:text-primary-orange font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-sm"
@@ -72,11 +72,11 @@ const NavBar = () => {
             </a>
             <a
               href="#kontakt"
-              className="text-gray-600 hover:text-primary-orange font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-sm"
+              className="ml-2 bg-primary-orange hover:bg-primary-orange-hover text-white px-4 py-2 rounded font-semibold transition-colors duration-400 ease-in-out cursor-pointer font-secondary whitespace-nowrap text-sm"
             >
               Kontakt
             </a>
-            <a
+            {/* <a
               href="https://gonow.dk/register"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,7 +91,7 @@ const NavBar = () => {
               className="ml-2 border  border-primary-orange text-primary-orange px-4 py-2 rounded font-semibold hover:bg-primary-orange/15 transition-colors duration-400 ease-in-out cursor-pointer font-secondary text-sm"
             >
               Login
-            </a>
+            </a> */}
           </nav>
 
           <button
@@ -161,12 +161,12 @@ const NavBar = () => {
           </a>
           <a
             href="#kontakt"
-            className="text-gray-700 hover:text-orange-500 font-medium transition"
+            className="bg-orange-400 hover:bg-orange-500 text-white px-4 py-2 rounded font-semibold transition"
             onClick={() => setMenuOpen(false)}
           >
             Kontakt
           </a>
-          <a
+          {/* <a
             href="https://gonow.dk/register"
             target="_blank"
             rel="noopener noreferrer"
@@ -183,7 +183,7 @@ const NavBar = () => {
             onClick={() => setMenuOpen(false)}
           >
             Login
-          </a>
+          </a> */}
         </div>
       </nav>
     </>

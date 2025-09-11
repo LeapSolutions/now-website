@@ -23,7 +23,7 @@ const MobileSection = () => (
           arbejdstid  – uanset om du er på farten, ude på en opgave eller
           arbejder hjemmefra.
         </p>
-        <button
+        {/* <button
           onClick={() =>
             window.open(
               "https://gonow.dk/register",
@@ -34,7 +34,7 @@ const MobileSection = () => (
           className="bg-primary-orange hover:bg-primary-orange-hover text-white px-6 py-2 max-md:px-5 max-md:py-2 rounded font-semibold text-lg transition-colors duration-400 ease-in-out cursor-pointer z-20"
         >
           Prøv NOW
-        </button>
+        </button> */}
       </div>
       {/* Right: Mobile Frame */}
       <div className="flex-1 flex justify-center lg:justify-end items-end relative h-full">
